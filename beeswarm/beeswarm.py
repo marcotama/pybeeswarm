@@ -78,9 +78,10 @@ def beeswarm(
     :param labelrotation: number or str, default: "vertical"
         The rotation of the X labels; can be "vertical", "horizontal" or a number in degrees
 
-     Returns:
-    :param bs: pandas.DataFrame with columns: xorig, yorig, xnew, ynew, color
-    :param ax: the axis used for plotting
+    Returns
+    -------
+    :returns bs: pandas.DataFrame with columns: xorig, yorig, xnew, ynew, color
+    :returns ax: the axis used for plotting
     """
     # Check things before we go on
     if method not in ["swarm", "hex", "center", "square"]:
